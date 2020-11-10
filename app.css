@@ -6,3 +6,50 @@
   * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
   *
 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tahona", san-serif;
+  color: white;
+  background-color: #1F0318;
+}
+
+h1, footer {
+  font-family: "Garamond", serif;
+  text-align: center;
+}
+
+main, nav, #feedback {
+  display: flex;
+  justify-content: center;
+}
+
+/* groups */
+.group {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  flex: 1;
+}
+
+.item-double {
+  flex: 2;
+}
+
+#next-button {
+  display: none;
+}
+
+/* responsive media code */
+@media all and (min-width: 600px) {
+  .group {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+
+  }
+}
